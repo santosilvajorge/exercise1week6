@@ -2,25 +2,47 @@
  Write a piece of code to find the largest of  given two integers
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+let x = 10
+let y = 2
+
+if (x < y) {
+  console.log("y is bigger!")
+  console.log(`Y = ${y}`)
+} else if (x > y){
+  console.log("x is bigger!")
+  console.log(`X = ${x}`)
+} else {
+  console.log(`X and Y are equal`)
+}
 
 /* EXERCISE 2
   Write a piece of code to check: if  given an integer is NOT equal to 5 then display " not equal"
 */
 
-/* WRITE YOUR ANSWER HERE */
+if (x !== 5){
+  console.log(`not equal`)
+} else{
+  console.log(`equal`)
+}
 
 /* EXERCISE 2
   Write a piece of code to check: if  given an integer is  divisible  by  5 then display "divisible by 5" (search for modulo operator)
 */
 
-/* WRITE YOUR ANSWER HERE */
+if (x % 5 == 0){
+  console.log('x is divisible by 5')
+} else {
+  console.log('x is not divisible by 5')
+}
 
 /* EXERCISE 3
  Write a piece of code for checking if, given two integers, the value of one of them is 8 or if their addition or subtraction is equal to 8.
 */
 
-/* WRITE YOUR ANSWER HERE */
+if (x == 8 || y == 8 || x + y == 8 || x - y == 8){
+  console.log('Check!')
+} 
 
 /* EXERCISE 4
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -28,14 +50,26 @@
  Write an algorithm that calculates the total cost to charge the user with.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let shoppingCart = 55
+let shipping = 10
+let totalShoppingCart = shoppingCart + shipping
+
+if (shoppingCart > 50){
+  console.log(`Total = ${shoppingCart}€`)
+} else {
+  console.log(`Total = ${shoppingCart+shipping}€`)
+}
 
 /* EXERCISE 5
 You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let blackFryday = true
+
+if (blackFryday = true){
+  console.log(`Black Fryday Price :${totalShoppingCart * 0.8}€`)
+}
 
 /* EXERCISE 6
 Create three variables and assign a numerical value to each one of them. 
