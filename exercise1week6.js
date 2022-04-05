@@ -77,19 +77,41 @@ Create three variables and assign a numerical value to each one of them.
  Display the result in the console.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let a = 4
+let b = 5
+let c = 3
+
+if (a < b && c < a){
+  console.log(b, a, c)
+} else if (a > b && c > a){
+  console.log(c, a, b)
+} else if (c < b && a < c){
+  console.log(b, c, a)
+} else if (c > b && a > c){
+  console.log(a, c, b)
+} else if (b < a && c < b){
+  console.log(a, b, c)
+} else if (b > a && c > b){
+  console.log(c, b, a)
+}
 
 /* EXERCISE 7
 Write a piece of code for checking if a given value is a integer or not. (search for 'typeof')
 */
 
-/* WRITE YOUR ANSWER HERE */
+if (typeof a === 'number'){
+  console.log('"a" is a integer')
+}
 
 /* EXERCISE 8
  Write a piece of code for checking if a given number is even or odd. (search for modulo operator)
 */
 
-/* WRITE YOUR ANSWER HERE */
+if (b % 2 == 0){
+  console.log('"b" is a Even Number')
+} else {
+  console.log('"b is a Odd Number')
+}
 
 /* EXERCISE 9
 Change the order of logic in the code so that it will return the correct statements in all cases.
@@ -103,7 +125,14 @@ if (val < 10) {
   }
 */
 
-/* WRITE YOUR ANSWER HERE */
+let val = 7
+if (val < 10) {
+    console.log("Less than 10");
+  } else if (val > 10) {
+    console.log("Greater than 10");
+  } else {
+    console.log("equal to 10");
+  }
 
 /*
 EXERCISE 10
