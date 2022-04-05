@@ -2,7 +2,6 @@
  Write a piece of code to find the largest of  given two integers
 */
 
-
 let x = 10
 let y = 2
 
@@ -16,7 +15,9 @@ if (x < y) {
   console.log(`X and Y are equal`)
 }
 
-/* EXERCISE 2
+
+
+/* EXERCISE 2.1
   Write a piece of code to check: if  given an integer is NOT equal to 5 then display " not equal"
 */
 
@@ -26,7 +27,9 @@ if (x !== 5){
   console.log(`equal`)
 }
 
-/* EXERCISE 2
+
+
+/* EXERCISE 2.2
   Write a piece of code to check: if  given an integer is  divisible  by  5 then display "divisible by 5" (search for modulo operator)
 */
 
@@ -36,6 +39,8 @@ if (x % 5 == 0){
   console.log('x is not divisible by 5')
 }
 
+
+
 /* EXERCISE 3
  Write a piece of code for checking if, given two integers, the value of one of them is 8 or if their addition or subtraction is equal to 8.
 */
@@ -43,6 +48,8 @@ if (x % 5 == 0){
 if (x == 8 || y == 8 || x + y == 8 || x - y == 8){
   console.log('Check!')
 } 
+
+
 
 /* EXERCISE 4
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -60,6 +67,8 @@ if (shoppingCart > 50){
   console.log(`Total = ${shoppingCart+shipping}€`)
 }
 
+
+
 /* EXERCISE 5
 You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
@@ -70,6 +79,8 @@ let blackFryday = true
 if (blackFryday = true){
   console.log(`Black Fryday Price :${totalShoppingCart * 0.8}€`)
 }
+
+
 
 /* EXERCISE 6
 Create three variables and assign a numerical value to each one of them. 
@@ -95,6 +106,8 @@ if (a < b && c < a){
   console.log(c, b, a)
 }
 
+
+
 /* EXERCISE 7
 Write a piece of code for checking if a given value is a integer or not. (search for 'typeof')
 */
@@ -102,6 +115,8 @@ Write a piece of code for checking if a given value is a integer or not. (search
 if (typeof a === 'number'){
   console.log('"a" is a integer')
 }
+
+
 
 /* EXERCISE 8
  Write a piece of code for checking if a given number is even or odd. (search for modulo operator)
@@ -112,6 +127,8 @@ if (b % 2 == 0){
 } else {
   console.log('"b is a Odd Number')
 }
+
+
 
 /* EXERCISE 9
 Change the order of logic in the code so that it will return the correct statements in all cases.
@@ -133,10 +150,12 @@ if (val < 10) {
   } else {
     console.log("equal to 10");
   }
+ 
+
 
 /*
 EXERCISE 10
-Write chained if/else if statements to fulfill the following conditions:
+Write chained if/else statements to fulfill the following conditions:
 num < 5 - display Tiny
 num < 10 - display Small
 num < 15 - display Medium
@@ -144,26 +163,54 @@ num < 20 - display Large
 num >= 20 - display Huge
 */
 
-/* WRITE YOUR ANSWER HERE */
+let num = 40
+
+if (num < 5){
+  console.log("Tiny")
+} else if (num < 10){
+  console.log("Small")
+} else if (num < 15){
+  console.log("Medium")
+} else if (num < 20){
+  console.log("Large")
+} else if (num >= 20){
+  console.log("Huge")
+}
+
+
 
 /*  EXERCISE 11
 Use a ternary operator to assign to a variable called gender the string values "male" or "female".
  The choice should be made based on the value of another variable called isMale.
 */
 
-/* WRITE YOUR ANSWER HERE */
+ isMale = true
+ console.log(isMale ? "male" : "female")
+
+
 
 /* EXERCISE 12
 Display the numbers 0 through 5 (inclusive) in acesnding order using a while loop.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let number = 0;
+
+while (number <= 5) {
+  console.log(number);
+  number = number + 1;
+}
+
+
 
 /* EXERCISE 13
 Display the numbers 0 through 10 (inclusive) in acesnding order using a for loop.
 */
 
-/* WRITE YOUR ANSWER HERE */
+for (let number = 0; number <= 10; number++){
+  console.log(number)
+}
+
+
 
 /* EXERCISE 14
 Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displaying 3 and 8.
