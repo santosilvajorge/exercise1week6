@@ -216,19 +216,39 @@ for (let number = 0; number <= 10; number++){
 Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displaying 3 and 8.
 */
 
-/* WRITE YOUR ANSWER HERE */
+for (let number = 0; number <= 10; number++){
+  if (number == 3) continue;
+  if (number == 8) continue;
+  console.log(number)
+}
+
+
 
 /* EXERCISE 15
  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
 */
 
-/* WRITE YOUR ANSWER HERE */
+for (let number = 0; number < 15; number++){
+  if (number % 2 == 0) {console.log('Even')};
+  if (number % 2 == 1) {console.log('Odd')};
+  console.log(number)
+}
+
+
 
 /* EXERCISE 16
   Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz
  */
 
-/* WRITE YOUR ANSWER HERE */
+  for (let number = 1; number < 100; number++){
+    if (number % 3 == 0 && number % 5 == 0) {console.log('FizzBuzz') };
+    if (number % 3 == 0) {console.log('Fizz')};
+    if (number % 5 == 0) {console.log('Buzz')};
+    if (number % 3 == 0 || number % 5 == 0) continue;
+    console.log(number)
+  }
+
+
 
 /* EXERCISE 17
   Write a piece of code to check the day of the week .  Usie  SWITCH - CASE  and given "day" variable with range from 1 to 7. 
@@ -236,4 +256,27 @@ Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displa
 
   */
 
-/* WRITE YOUR ANSWER HERE */
+let day = 5;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+}
